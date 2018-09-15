@@ -45,7 +45,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>layout 后台大布局 - Layui</title>
-    <link rel="stylesheet" href="~/Content/layui/layui.css">
+    <link rel="stylesheet" href="~/Layui/css/layui.css">
 </head>
 <body class="layui-layout-body">
     <div class="layui-layout layui-layout-admin">
@@ -104,6 +104,43 @@
                     <li class="layui-nav-item"><a href="">云市场</a></li>
                     <li class="layui-nav-item"><a href="">发布商品</a></li>
                 </ul>
+                <ul class="layui-nav layui-nav-tree">
+                    <li data-name="home" class="layui-nav-item">
+                        <a href="javascript:;" lay-tips="主页" lay-direction="2">
+                            <i class="layui-icon layui-icon-home"></i>
+                            <cite>主页</cite>
+                            <span class="layui-nav-more"></span>
+                        </a>
+                        <dl class="layui-nav-child">
+                            <dd data-name="console" class="layui-this">
+                                <a lay-href="home/console.html">控制台</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li data-name="component" class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:;" lay-tips="组件" lay-direction="2">
+                            <i class="layui-icon layui-icon-component"></i>
+                            <cite>组件</cite>
+                            <span class="layui-nav-more"></span>
+                        </a>
+                        <dl class="layui-nav-child">
+                            <dd data-name="grid">
+                                <a href="javascript:;">栅格<span class="layui-nav-more"></span></a>
+                                <dl class="layui-nav-child">
+                                    <dd data-name="list">
+                                        <a lay-href="component/grid/list.html">等比例列表排列</a>
+                                    </dd>
+                                    <dd data-name="mobile">
+                                        <a lay-href="component/grid/mobile.html">按移动端排列</a>
+                                    </dd>
+                                </dl>
+                            </dd>
+                            <dd data-name="button">
+                                <a lay-href="component/button/index.html">按钮</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -118,7 +155,7 @@
             © layui.com - 底部固定区域
         </div>
     </div>
-    <script src="~/Scripts/layui/layui.all.js"></script>
+    <script src="~/Layui/layui.all.js"></script>
     <script>
         //JavaScript代码区域
         layui.use('element', function () {
