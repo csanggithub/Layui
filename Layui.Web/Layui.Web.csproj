@@ -91,7 +91,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Demo\Index.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Layui\css\layui.css" />
@@ -198,6 +197,7 @@
     <Content Include="Layui\lay\modules\tree.js" />
     <Content Include="Layui\lay\modules\upload.js" />
     <Content Include="Layui\lay\modules\util.js" />
+    <Content Include="Layui\style\admin.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Layui\font\iconfont.eot" />
